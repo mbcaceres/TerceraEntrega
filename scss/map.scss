@@ -1,0 +1,19 @@
+$coloresPagina:(
+	colorPrimario: lightpink,
+	colorSecundario: lightgrey,
+	colorTipografia: white,
+	colorTipografiaSecundario: pink
+	);
+
+$estilos:(
+	font: montserrat sans-serif,
+	align: left,
+	size: 14px
+	);
+
+div.footer{
+	color:map-get($coloresPagina,colorTipografiaSecundario);
+	font-family:map-get($estilos,font);
+	text-align: map-get($estilos,align);
+	font-size: map-get($estilos,size);
+}

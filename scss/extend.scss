@@ -1,0 +1,20 @@
+//BASE
+
+.botonPresupuesto {
+	width: 190px;
+	height: 40px;
+	font-size: 14px;
+	color: white;
+	background-color: lightpink;
+	border: 1px solid pink;
+	border-radius: 20px;
+	font-family: montserrat;
+	text-align: center;
+}
+
+//EXTEND BASE
+
+.botonConsulta { 
+@extend .botonPresupuesto;
+background-color: pink;
+}

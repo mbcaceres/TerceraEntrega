@@ -1,0 +1,9 @@
+@mixin colorYtipografias($color,$font,$align)
+{ color:$color;
+font-family:$font;
+text-align:$align;}
+
+div {
+	@include colorYtipografias (lightpink,montserrat,left);
+}
+

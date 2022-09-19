@@ -1,0 +1,54 @@
+header {
+  background-color: lightpink; }
+  header div {
+    padding: 4px; }
+    header div h1 {
+      font-size: 30px;
+      color: white;
+      font-family: montserrat; }
+    header div ul {
+      text-decoration: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    color: white;
+    font-size: 20px; }
+
+footer {
+  display: grid;
+  grid-template-areas: "footerEdicion footerContacto";
+  grid-template-column: 50% 50%;
+  grid-areas: "footerEdicion" "footerContacto";
+  grid-template-row: auto auto;
+  background-color: lightgrey;
+  font-family: montserrat;
+  font-weight: bold;
+  color: white;
+  padding-left: 10px;
+  line-height: 5px; }
+
+div.footer {
+  color: pink;
+  font-family: montserrat sans-serif;
+  text-align: left;
+  font-size: 14px; }
+
+.botonPresupuesto, .botonConsulta {
+  width: 190px;
+  height: 40px;
+  font-size: 14px;
+  color: white;
+  background-color: lightpink;
+  border: 1px solid pink;
+  border-radius: 20px;
+  font-family: montserrat;
+  text-align: center; }
+
+.botonConsulta {
+  background-color: pink; }
+
+div {
+  color: lightpink;
+  font-family: montserrat;
+  text-align: left; }

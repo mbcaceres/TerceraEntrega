@@ -1,0 +1,14 @@
+footer { 
+	display: grid;
+	grid-template-areas: "footerEdicion footerContacto";
+	grid-template-column: 50% 50%;
+	grid-areas: "footerEdicion""footerContacto";
+	grid-template-row:auto auto;
+	background-color: lightgrey;
+	font-family: montserrat;
+	font-weight: bold;
+	color:white;
+	padding-left: 10px;
+	line-height: 5px;}
+
+	
