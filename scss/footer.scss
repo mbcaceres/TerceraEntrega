@@ -3,12 +3,12 @@ footer {
 	grid-template-areas: "footerEdicion footerContacto";
 	grid-template-column: 50% 50%;
 	grid-areas: "footerEdicion""footerContacto";
-	grid-template-row:auto auto;
-	background-color: lightgrey;
-	font-family: montserrat;
+	grid-template-row: auto auto;
+	background-color: lightpink;
 	font-weight: bold;
-	color:white;
-	padding-left: 10px;
-	line-height: 5px;}
-
-	
+	line-height: 5px;
+	padding-left: 20px;
+	paddig-right: 20px;
+	flex-direction: column;
+	font-family: montserrat;
+}

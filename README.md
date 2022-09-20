@@ -5,6 +5,6 @@ Grids + flexbox para index.html + contacto.html + nosotros.html + eventos.html
 Bootstrap para branding.html
 SCSS para estilo
 GIT como controlador
-
+SEO optimizado
 
 

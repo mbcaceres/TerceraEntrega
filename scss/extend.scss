@@ -1,6 +1,6 @@
-//BASE
+//BASE BOTONES
 
-.botonPresupuesto {
+.botonSuscribir {
 	width: 190px;
 	height: 40px;
 	font-size: 14px;
@@ -9,12 +9,46 @@
 	border: 1px solid pink;
 	border-radius: 20px;
 	font-family: montserrat;
-	text-align: center;
-}
+	text-align: center;}
 
 //EXTEND BASE
 
 .botonConsulta { 
-@extend .botonPresupuesto;
+@extend .botonSuscribir;
 background-color: pink;
 }
+
+//TEXTOS
+
+.tipografiaSitio {
+	font-family: montserrat;
+	text-align: left; }
+
+//EXTEND TEXTOS
+.textoBienvenida .blogTexto{
+@extend .tipografiaSitio;
+}
+
+// BASE  BRANDING
+
+.tituloBranding
+{ color: lightpink;
+text-align: center;
+font-family: montserrat;}
+
+.nuestroPortfolio {
+	color: lightpink;
+font-family: montserrat;
+text-align: center;}
+
+// EXTEND BRANDING
+.parrafoBranding  {
+	@extend .tituloBranding ;
+}
+
+.textoBranding .nuestraHistoria .tipografias{
+	@extend .nuestroPortfolio;
+}
+
+
+

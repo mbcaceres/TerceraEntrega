@@ -2,18 +2,38 @@ $coloresPagina:(
 	colorPrimario: lightpink,
 	colorSecundario: lightgrey,
 	colorTipografia: white,
-	colorTipografiaSecundario: pink
+	colorTipografiaSecundario: pink,
 	);
 
 $estilos:(
-	font: montserrat sans-serif,
+	display: flex,
 	align: left,
-	size: 14px
+	size: 14px,
+	flexd: column,
+	jcontent: flex-start,
+	pleft: 30px,
+	ptop: 250px,
+	bgcolor: lightpink,
+	color: white,
+	font: montserrat,
+	c-align:center,
 	);
 
-div.footer{
-	color:map-get($coloresPagina,colorTipografiaSecundario);
-	font-family:map-get($estilos,font);
-	text-align: map-get($estilos,align);
-	font-size: map-get($estilos,size);
-}
+
+.blogTexto {
+	display: map-get($estilos,display);
+	flex-direction: map-get($estilos,flexd);
+	justify-content: map-get($estilos,jcontent);
+	padding-left: map-get($estilos, pleft);
+	padding-top: map-get($estilos,ptop);
+	background-color: map-get($estilos,bgcolor);
+	color: map-get($estilos,color);
+	font-family: map-get($estilos,font);}
+
+.textoBienvenida {
+	text-align: map-get($estilos,c-align);
+	color: map-get($coloresPagina,colorTipografiaSecundario);
+	display: map-get($estilos,display);
+	flex-direction: map-get($estilos,column);
+	font-family: map-get($estilos,font);}
+

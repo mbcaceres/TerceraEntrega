@@ -1,0 +1,57 @@
+.gridContainer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto auto; 
+	overflow: hidden;
+	grid-template-areas:
+	"header header" 
+	"imagenPortada imagenPortada"
+	"textoBienvenida textoBienvenida"
+	"secciones secciones"
+	"blogImagen blogTexto"
+	"footer footer";}
+
+header {grid-area: header; display: flex;}
+.imagenPortada {grid-area: imagenPortada; display: flex;}
+.textoBienvenida {grid-area: textoBienvenida;display:flex; flex-direction: column;}
+.secciones {grid-area: secciones; display: flex; justify-content: space-between; padding: 10px; margin: 10px;}
+.blogImagen {grid-area: blogImagen;}
+.blogTexto {grid-area: blogTexto;}
+footer {grid-area: footer; display: flex; justify-content: flex-start;}
+
+//MEDIAQUERIE*//
+/*MOBILE*/
+@media only screen and (max-width: 768px) {
+body .gridContainer{
+display: grid;
+overflow: hidden;
+grid-template-areas:
+"header"
+"imagenPortada"
+"textoBienvenida"
+"secciones"
+"blogImagen"
+"blogTexto"
+"formularioContacto"
+"footer";
+
+grid-template-columns: 100%;
+grid-template-rows: auto auto auto auto auto auto auto;}
+header {flex-direction: column;}
+	.listadoMenu {flex-direction: column;
+	justify-content: flex-start;}
+
+.textoBienvenida {
+		flex-direction: column;
+		text-align: left;
+	}
+.secciones {display: flex;
+	flex-direction: column;}
+
+
+img { max-width: 100%}
+.blogTexto {
+	padding-left: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+} }
